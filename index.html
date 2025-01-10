@@ -4,22 +4,56 @@
         <title>Library</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src=""></script>
+        <script src="script.js"></script>
         <link href="style.css" rel="stylesheet"> 
     </head>
     <body>
         <header>
-            <div class="header-objects">
-                <h1 class="">Exam app gk</h1>
-                <input class="" type="text">
-                <div class="" id="buttons">
-                    <button class="header-button" id="create-card">Show</button>
+            <div class="header-list">
+                <div class="header-object-left">
+                    <div>
+                        <button class="header-button" id="sidenav-activate">&#9776;</button>
+                    </div>
+                    <h1 class="header-object">Exam app gk</h1>
+                </div>
+                <div class="header-object" id="buttons">
+                    <button class="header-object header-button" id="create-card">Show</button>
                 </div>
             </div>
         </header>
-        <div id="empty-body">
-            <h2>No readings added</h2>
-            <p>To add readings press Add and input all needed data</p>
+        <div id="sideBar" class="sidenav">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
         </div>
+        <section id="sensor-section">
+            <div class="title-section">
+                <h2 class="topic-title">Sensor Cards</h2>
+                <hr class="title-ender">
+            </div>
+            <div id="card-holder">
+                <section id="empty-body">
+                    <h2 class="empty-body-title">No readings added</h2>
+                    <p class="empty-body-text">To add readings press Add and input all needed data</p>
+                </section>
+            </div>
+        </section>
+        <section id="sensor-table-section">
+            <div class="title-section">
+                <h2 class="topic-title">Posible sensor table</h2>
+                <hr class="title-ender">
+            </div>
+            <div id="table-holder">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
     </body>
 </html>

@@ -7,37 +7,138 @@ header {
     background-color: #cd1d2e;
 }
 
-header .header-objects {
+header .header-list {
     display: flex;
+    justify-self: center;
     align-items: center;
-    width: 95%;
     justify-content: space-between;
+    width: 80%;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    justify-self: center;
 }
 
-.header-objects input {
-	padding: 10px;
-	font-size: 15px;
-	border: 1px solid grey;
-	border-radius: 3px;
-	width: 40rem;
+.header-object-left {
+    display: flex;
+    width: 18rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header-objects .header-button {
+.header-object-left h1 {
+    width: 12rem;
+}
+
+.header-button {
     padding: 10px;
     border: 1px solid;
     border-radius: 3px;
     width: 5rem;
 }
 
-#empty-body {
+.header-list #create-card {
+    justify-self: end;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.title-section {
     display: flex;
-    align-items: center;
     justify-self: center;
-    justify-content: center;
-    list-style-type: none;
+    justify-content: space-between;
+    /* width: 100px; */
+    padding-top: 50px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.topic-title {
+    margin-top: 0;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.title-ender {
+    /* display: block;
+    justify-self: center; */
+    height: 2px;
+    width: 50px;
+    border-width: 0;
+    color: #cd1d2e;
+    background-color: #cd1d2e;
+    margin-bottom: 0;
+}
+
+#empty-body {
+    justify-self: center;
+    align-self: center;
+    /* height: 10%; */
+    margin: 0;
+}
+
+#card-holder {
+    display: flex;
+    margin: 0;
+    height: 400px;
+    width: 100%;
+
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.empty-body-title {
+    justify-self: center;
+    text-decoration: underline;
+}
+
+.empty-body-text {
+    justify-self: center;
+}
+
+#sensor-section {
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+#sensor-table-section {
+    border-bottom: 1px solid rgb(192, 192, 192);
 }
