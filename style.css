@@ -356,3 +356,8 @@ header #header-list {
     color: red;
     font-size: 15px;
 }
+
+.header-holder {
+    display: flex;
+    justify-content: center;
+}
