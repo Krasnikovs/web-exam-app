@@ -8,28 +8,28 @@ const e = [
     },
     {
         "device": "sensor",
-        "type": "holla efect",
+        "type": "hall effect",
         "name": "Flange Mount Hall Effect",
         "supply voltage": 24,
         "img": "https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/Y2773624-01"
     },
     {
         "device": "sensor",
-        "type": "holla efect",
+        "type": "hall effect",
         "name": "Panel Hall Effect Sensor",
         "supply voltage": 24,
         "img": "https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/Y2713086-01"
     },
     {
         "device": "sensor",
-        "type": "montion",
+        "type": "motion",
         "name": "PEC16",
         "supply voltage": 5,
         "img": "https://i.ebayimg.com/images/g/yYoAAOSwChJjjaE9/s-l1200.jpg"
     },
     {
         "device": "sensor",
-        "type": "montion",
+        "type": "motion",
         "name": "ECW1J",
         "supply voltage": 10,
         "img": "https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/R6928617-01"
@@ -43,7 +43,7 @@ const e = [
     },
     {
         "device": "sensor",
-        "type": "tenzorezistor",
+        "type": "force",
         "name": "FSR03BE",
         "supply voltage": 3.3,
         "img": "https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/W2047509-01"

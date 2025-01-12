@@ -6,25 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="script.js"></script>
         <script src="electric.js"></script>
-        <link href="style.css" rel="stylesheet"> 
+        <link href="style.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div class="header-list">
-                <div class="header-object-left">
-                    <div>
-                        <button class="header-button" id="sidenav-activate">&#9776;</button>
-                    </div>
-                    <h1 class="header-object">Exam app gk</h1>
+            <div id="header-list">
+                <div class="header-main-object">
+                    <h1>Exam app gk</h1>
                 </div>
-                <div class="header-object" id="buttons">
-                    <button class="header-object header-button" id="create-card">Show</button>
+                <div id="header-button-container">
+                    <button class="header-button" id="sidenav-activate">&#9776;</button>
+                </div>
+                <div id="header-object">
+                    <div class="shop-dropdown">
+                        <button class="shop-dropdown-button header-button">Shops for componets</button>
+                        <div class="shop-dropdown-content">
+                            <a href="https://best.aliexpress.com" target="_blank">Aliexpress</a>
+                            <a href="https://lv.rsdelivers.com" target="_blank">RsDelivers</a>
+                        </div>
+                    </div>
+                    <button class="header-button" id="create-card">Show</button>
                 </div>
             </div>
         </header>
         <div class="reading-popup" id="reading-form">
             <div class="project-name-section">
-                <div id="">
+                <div>
                     <button class="project-buttons" id="new-project">New project</button>
                     <button class="project-buttons" id="exist-project">Add to project</button>
                 </div>
@@ -36,38 +43,24 @@
             </div>
             <div class="reading-component-list">
                 <ul id="component-list">
-
+                    
                 </ul>
-
-                <!-- <div>
-                    <label for="component-name">Component name:</label>
-                    <input type="text" id="component-name">
-                </div>
-                <div>
-                    <label for="component-type">Component type:</label>
-                    <select id="component-type">
-                        <option value=""></option>
-                    </select>
-                </div>
-                <div>
-                    <select id="indept-componet-type">
-                        
-                    </select>
-                </div>
-                <div>
-                    <button id="filter">Check</button>
-                </div> -->
             </div>
             <div id="component-list-error" class="error"></div>
             <div>
                 <button id="add">Add</button>
+                <button id="cancle">Cancle</button>
             </div>
         </div>
-        <div id="sideBar" class="sidenav">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+        <div id="side-bar" class="side-nav">
+            <div class="side-shop-dropdown">
+                <button class="side-nav-button">Shops for componets</button>
+                <div class="side-dropdown-content">
+                    <a href="https://best.aliexpress.com" target="_blank">Aliexpress</a>
+                    <a href="https://lv.rsdelivers.com" target="_blank">RsDelivers</a>
+                </div>
+            </div>
+            <button class="side-nav-button" id="create-card-mobile">Show</button>
         </div>
         <section id="sensor-section">
             <div class="title-section">
@@ -75,16 +68,6 @@
                 <hr class="title-ender">
             </div>
             <div id="card-holder">
-                <!-- <div class="sensor-card">
-                    <div class="sensor-card-data-container">
-                        <p>X: 0</p>
-                        <p>y: 0</p>
-                        <p>z: 0</p>
-                    </div>
-                    <div class="sensor-card-name-container">
-                        <h5>Sensor</h5>
-                    </div>
-                </div> -->
                 <section id="empty-body">
                     <h2 class="empty-body-title">No readings added</h2>
                     <p class="empty-body-text">To add readings press Add and input all needed data</p>
@@ -96,18 +79,18 @@
                 <h2 class="topic-title">Posible sensor table</h2>
                 <hr class="title-ender">
             </div>
-            <div id="table-holder">
-                <ul class="electronic-table">
-                    <li class="electronic-item"><img src="https://components101.com/sites/default/files/components/Sound-Detection-Sensor-Module.jpg"></li>
-                    <li class="electronic-item"><img src="https://image.made-in-china.com/202f0j00IeiqDvTlfKcN/Temperature-and-Humidity-Sensor-Module-Am2302-Dht22.webp" alt="AM 2303 DHT22"></li>
-                    <li class="electronic-item"><img src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/138/description/MPU6050%20Module.jpg"></li>
-                    <li class="electronic-item"><img src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/Y2494368-01"></li>
-                    <li class="electronic-item"><img src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/Y2773624-01"></li>
-                    <li class="electronic-item"><img src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/Y2713086-01"></li>
-                    <li class="electronic-item"><img src="https://i.ebayimg.com/images/g/yYoAAOSwChJjjaE9/s-l1200.jpg"></li>
-                    <li class="electronic-item"><img src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/R6928617-01"></li>
-                    <li class="electronic-item"><img src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/F2370799-01"></li>
-                    <li class="electronic-item"><img src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/W2047509-01"></li>
+            <div id="sensor-table-holder">
+                <ul class="electronic-table" id="sensor-table">
+                    <li class="electronic-item"><img alt="sensor" src="https://components101.com/sites/default/files/components/Sound-Detection-Sensor-Module.jpg"></li>
+                    <li class="electronic-item"><img alt="sensor" src="https://image.made-in-china.com/202f0j00IeiqDvTlfKcN/Temperature-and-Humidity-Sensor-Module-Am2302-Dht22.webp"></li>
+                    <li class="electronic-item"><img alt="sensor" src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/138/description/MPU6050%20Module.jpg"></li>
+                    <li class="electronic-item"><img alt="sensor" src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/Y2494368-01"></li>
+                    <li class="electronic-item"><img alt="sensor" src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/Y2773624-01"></li>
+                    <li class="electronic-item"><img alt="sensor" src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/Y2713086-01"></li>
+                    <li class="electronic-item"><img alt="sensor" src="https://i.ebayimg.com/images/g/yYoAAOSwChJjjaE9/s-l1200.jpg"></li>
+                    <li class="electronic-item"><img alt="sensor" src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/R6928617-01"></li>
+                    <li class="electronic-item"><img alt="sensor" src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/F2370799-01"></li>
+                    <li class="electronic-item"><img alt="sensor" src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/W2047509-01"></li>
                 </ul>
             </div>
         </section>
@@ -116,14 +99,14 @@
                 <h2 class="topic-title">Motors and electrical components</h2>
                 <hr class="title-ender">
             </div>
-            <div id="table-holder">
-                <ul class="electronic-table">
-                    <li class="electronic-item"><img src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/F1977692-01"></li>
-                    <li class="electronic-item"><img src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/F7111589-01"></li>
-                    <li class="electronic-item"><img src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/Y2463264-01"></li>
-                    <li class="electronic-item"><img src="https://ae01.alicdn.com/kf/Saf0b1b6a3b3d40e7bb3ae9026d6a4fb1T.jpg_640x640q90.jpg"></li>
-                    <li class="electronic-item"><img src=""></li>
-                    <li class="electronic-item"><img src=""></li>
+            <div id="component-table-holder">
+                <ul class="electronic-table" id="component-table">
+                    <li class="electronic-item"><img alt="component" src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/F1977692-01"></li>
+                    <li class="electronic-item"><img alt="component" src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/F7111589-01"></li>
+                    <li class="electronic-item"><img alt="component" src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/Y2463264-01"></li>
+                    <li class="electronic-item"><img alt="component" src="https://ae01.alicdn.com/kf/Saf0b1b6a3b3d40e7bb3ae9026d6a4fb1T.jpg_640x640q90.jpg"></li>
+                    <li class="electronic-item"><img alt="component" src="https://thepihut.com/cdn/shop/products/towerpro-servo-motor-sg90-digital-towerpro-103048-40329593159875_1500x.jpg?v=1680171444"></li>
+                    <li class="electronic-item"><img alt="component" src="https://rotontek.com/wp-content/webpc-passthru.php?src=https://rotontek.com/wp-content/uploads/2023/08/image-45.png&nocache=1"></li>
                 </ul>
             </div>
         </section>
